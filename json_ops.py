@@ -22,7 +22,7 @@ geolocator=Nominatim(user_agent='weather_app')
 try:
     location=geolocator.geocode(place)
 except:
-    raise Error("Invalid location, please revise your input.")
+    raise Exception("Invalid location, please revise your input.")
     
 place = location.address
 logging.warning(f"Application started, user input address: {' '.join(sys.argv[1:])} is mapped to {place}")
