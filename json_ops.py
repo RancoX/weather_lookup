@@ -1,5 +1,4 @@
 import json, requests, sys, logging
-from msilib.schema import Error
 from geopy.geocoders import Nominatim
 
 '''
